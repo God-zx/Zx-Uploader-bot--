@@ -465,7 +465,15 @@ async def txt_handler(bot: Client, m: Message):
     else:
         CR = raw_text3
         
-       
+       await editable.edit("**Enter Your PW 𝗧𝗼𝗸𝗲𝗻 For 𝐌𝐏𝐃 𝐔𝐑𝐋  or send '/vip' for use default😄.**")
+    input4: Message = await bot.listen(editable.chat.id)
+    raw_text4 = input4.text
+    await input4.delete(True)
+    if raw_text4 == '/vip':
+        MR = token
+    else:
+        MR = raw_text4
+        
     await editable.edit("Now send the **Thumb url**\n**Eg Who's End With .jpg:** ``\n\nor Send `no`")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
