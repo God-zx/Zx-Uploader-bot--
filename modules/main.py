@@ -523,6 +523,7 @@ async def txt_handler(bot: Client, m: Message):
             elif"d1d34p8vz63oiq" in url or "sec1.pw.live" in url:
              url = f"https://anonymouspwplayerr-c96de7802811.herokuapp.com/pw?url={url}&token={raw_text4}"
                 
+           
             elif "apps-s3-jw-prod.utkarshapp.com" in url:
                 if 'enc_plain_mp4' in url:
                     url = url.replace(url.split("/")[-1], res+'.mp4')
