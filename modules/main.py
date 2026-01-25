@@ -154,7 +154,7 @@ async def start(client: Client, msg: Message):
 
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
-    await m.reply_text("💔**STOPPED**💔", True)
+    await m.reply_text("⚪**WORK IS STOPPED**🔵", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
@@ -176,7 +176,7 @@ async def txt_handler(bot: Client, m: Message):
             links.append(i.split("://", 1))
         os.remove(x)
     except:
-        await m.reply_text("Are yaar **txt** file Bhejni thi \n\n **Chal koi na tap on** /Love **Or* /Hate **then** \n\n **resend txt file to me again🫂.**")
+        await m.reply_text("Are yaar **txt** file Bhejni thi \n\n **Chal koi na tap on** /Money **Or*    /Fame **then** \n\n **resend txt file to me again🫂.**")
         os.remove(x)
         return
    
@@ -219,7 +219,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/Richer' for use default🌚.**\n**For an Example**:\n @SmartBoy_ApnaMS")
+    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/Richer' for use default🥂.**\n**For an Example**:\n @SmartBoy_ApnaMS")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -397,7 +397,7 @@ async def txt_handler(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["Fame"]) )
 async def txt_handler(bot: Client, m: Message):
-    editable = await m.reply_text(f"**🔹Hi I am Poweful Hater Famous Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch🥂.**")
+    editable = await m.reply_text(f"**🔹Hi I am Poweful Famous TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch🥂.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -413,7 +413,7 @@ async def txt_handler(bot: Client, m: Message):
             links.append(i.split("://", 1))
         os.remove(x)
     except:
-        await m.reply_text("Are yaar **txt** file Bhejni thi \n\n **Chal koi na tap on** /Love **Or* /Hate **then** \n\n **resend txt file to me again🫂.**")
+        await m.reply_text("Are yaar **txt** file Bhejni thi \n\n **Chal koi na tap on** /Money **Or*    /Fame **then** \n\n **resend txt file to me again🫂.**")
         os.remove(x)
         return
    
