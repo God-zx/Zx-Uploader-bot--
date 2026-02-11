@@ -311,8 +311,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**📹 VID_ID: {str(count).zfill(3)}.\n\n📒 Title: {name1} {res}.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By𓆩♛𓆪 : \n{CR}\n\n**∘𒆜━━━❀🩷𝐌𝐒🤍❀━━━𒆜**'
-                cc1 = f'**🗃️ PDF_ID: {str(count).zfill(3)}.\n\n📒 Title: {name1} .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By𓆩♛𓆪 : \n{CR}\n\n**∘𒆜━━━❀🩷𝐌𝐒🤍❀━━━𒆜∘**'
+                cc = f'\n╭──────.★..─╮\n{str(count).zfill(3)}\n╰─..★.──────╯\n\n📝 Title: {name1} \n├── Extention : @Sumit_Zx.mkv\n├── Resolution : [{res}]\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By :\n╭──────────.✨..─╮\n\n      {CR}\n\n╰─..✨.──────────╯\n\n<pre><code>━━━━━✦𝗦𝗨𝗠𝗜𝗧❤️✦━━━━━</code></pre>'
+                cc1 = f'\n╭──────.★..─╮\n{str(count).zfill(3)}\n╰─..★.──────╯\n\n📝 Title: {name1} \n├── Extention : @Sumit_Zx.pdf\n├── Resolution : [None]\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By :\n╭──────────.✨..─╮\n\n      {CR}\n\n╰─..✨.──────────╯\n\n<pre><code>━━━━━✦𝗦𝗨𝗠𝗜𝗧❤️✦━━━━━</code></pre>'
                     
                 
                 if "drive" in url:
