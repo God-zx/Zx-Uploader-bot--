@@ -29,12 +29,12 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 # Initialize the bot
 bot = Client(
     "bot",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN
+    api_id=34943077,
+    api_hash="11aeec678349456f1d190f02975ed89f",
+    bot_token="8330934075:AAEf0Q_N_QKFmHicZHyNcNEUPWbQresXOn8"
 )
 
-my_name = "MS"
+my_name = "SUMIT"
 
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "/modules/youtube_cookies.txt")
 
@@ -148,7 +148,7 @@ async def start(client: Client, msg: Message):
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Checking status Okay... Command is Private Dear🫂.**Bot Made BY @SmartBoy_ApnaMS**🔍\n\n"
+        "Checking status Okay... Command is Private Dear🫂.**Bot Made BY @SUMIT_ZX**🔍\n\n"
         "Progress:[🟩🟩🟩🟩🟩🟩🟩🟩🟩] 100%\n\n"
     )
 
@@ -158,14 +158,14 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
-@bot.on_message(filters.command(["Teddy"]) )
+@bot.on_message(filters.command(["baby"]) )
 async def txt_handler(bot: Client, m: Message):
     editable = await m.reply_text(f"**🔹Hi I am Poweful Sweet TXT Downloader📥 Bot.**\n🔹**Send me the TXT file and Just wait and Watch💸.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"@SmartBoy_ApnaMS"
+    credit = f"@SUMIT_ZX"
     token = f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYxNTE3MzAuMTI2LCJkYXRhIjp7Il9pZCI6IjYzMDRjMmY3Yzc5NjBlMDAxODAwNDQ4NyIsInVzZXJuYW1lIjoiNzc2MTAxNzc3MCIsImZpcnN0TmFtZSI6IkplZXYgbmFyYXlhbiIsImxhc3ROYW1lIjoic2FoIiwib3JnYW5pemF0aW9uIjp7Il9pZCI6IjVlYjM5M2VlOTVmYWI3NDY4YTc5ZDE4OSIsIndlYnNpdGUiOiJwaHlzaWNzd2FsbGFoLmNvbSIsIm5hbWUiOiJQaHlzaWNzd2FsbGFoIn0sImVtYWlsIjoiV1dXLkpFRVZOQVJBWUFOU0FIQEdNQUlMLkNPTSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTczNTU0NjkzMH0.iImf90mFu_cI-xINBv4t0jVz-rWK1zeXOIwIFvkrS0M"
     try:    
         with open(x, "r") as f:
@@ -176,7 +176,7 @@ async def txt_handler(bot: Client, m: Message):
             links.append(i.split("://", 1))
         os.remove(x)
     except:
-        await m.reply_text("Are yaar **txt** file Bhejni thi \n\n **Chal koi na tap on** /Teddy **Or*   /Bear **then** \n\n **resend txt file to me again🫂.**")
+        await m.reply_text("Are yaar **txt** file Bhejni thi \n\n **Chal koi na tap on** /Zx **Or*   /Bear **then** \n\n **resend txt file to me again🫂.**")
         os.remove(x)
         return
    
@@ -188,7 +188,7 @@ async def txt_handler(bot: Client, m: Message):
         arg = int(raw_text)
     except:
         arg = 1
-    await editable.edit("**Enter Your 𝗕𝗮𝘁𝗰𝗵 Name or send '/mahi' for extracting name from your text filename🧐.**")
+    await editable.edit("**Enter Your 𝗕𝗮𝘁𝗰𝗵 Name or send '/d' for extracting name from your text filename🧐.**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
@@ -197,7 +197,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**Enter resolution.\n Eg : 144, 250, 360, 480, 720 or 1080😚.**")
+    await editable.edit("**Enter resolution.\n Eg : 480, 720 or 1080😚.**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -219,7 +219,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/Cutie' for use default🥂.**\n**For an Example**:\n @SmartBoy_ApnaMS")
+    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/de' for use default🥂.**\n**For an Example**:\n @SUMIT_ZX")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -228,7 +228,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         CR = raw_text3
         
-    await editable.edit("**Enter Your PW 𝗧𝗼𝗸𝗲𝗻 For 𝐌𝐏𝐃 𝐔𝐑𝐋 or send '/vip' for use default🫣**")
+    await editable.edit("**Enter Your PW 𝗧𝗼𝗸𝗲𝗻 For 𝐌𝐏𝐃 𝐔𝐑𝐋 or send '/unknown' for use default🫣**")
     input4: Message = await bot.listen(editable.chat.id)
     raw_text4 = input4.text
     await input4.delete(True)
@@ -374,7 +374,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"✰🖥️ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝗪𝗮𝗶𝘁..🤖🚀 »\n\n📝 Title:- `{name}\n\n📹 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲🧸: ✦ @SmartBoy_ApnaMS ❖"
+                    Show = f"✰🖥️ 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝗪𝗮𝗶𝘁..🤖🚀 »\n\n📝 Title:- `{name}\n\n📹 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲🧸: ✦ @SUMIT_ZX ❖"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -391,7 +391,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text( "𝙀𝙑𝙀𝙍𝙔𝙏𝙃𝙄𝙉𝙂 𝙄𝙎 𝘿𝙊𝙉𝙀  𝘿𝙊𝙉𝙀 \n\n**NOW TIME FOR REACTIONS✅** \n\n**Reaction nahi de rhe ho Sharam karo thodi Paap lagega Paap😂**")
+    await m.reply_text( "𝙀𝙑𝙀𝙍𝙔𝙏𝙃𝙄𝙉𝙂 𝙄𝙎 𝘿𝙊𝙉𝙀  𝘿𝙊𝙉𝙀 ✅**")
 
 # Advance
 
@@ -402,7 +402,7 @@ async def txt_handler(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"@SmartBoy_ApnaMS"
+    credit = f"@SUMIT_ZX"
     token = f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYxNTE3MzAuMTI2LCJkYXRhIjp7Il9pZCI6IjYzMDRjMmY3Yzc5NjBlMDAxODAwNDQ4NyIsInVzZXJuYW1lIjoiNzc2MTAxNzc3MCIsImZpcnN0TmFtZSI6IkplZXYgbmFyYXlhbiIsImxhc3ROYW1lIjoic2FoIiwib3JnYW5pemF0aW9uIjp7Il9pZCI6IjVlYjM5M2VlOTVmYWI3NDY4YTc5ZDE4OSIsIndlYnNpdGUiOiJwaHlzaWNzd2FsbGFoLmNvbSIsIm5hbWUiOiJQaHlzaWNzd2FsbGFoIn0sImVtYWlsIjoiV1dXLkpFRVZOQVJBWUFOU0FIQEdNQUlMLkNPTSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTczNTU0NjkzMH0.iImf90mFu_cI-xINBv4t0jVz-rWK1zeXOIwIFvkrS0M"
     try:    
         with open(x, "r") as f:
@@ -456,7 +456,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/Love'for use default🥂.**\n**For an Example**:\n @SmartBoy_ApnaMS")
+    await editable.edit("**Enter Your 𝙉𝙖𝙢𝙚 or send '/Love'for use default🥂.**\n**For an Example**:\n @SUMIT_ZX")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -565,8 +565,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
         
-                cc = f'**📹 VID_ID: {str(count).zfill(3)}.\n\n📒 Title: {name1} {res}.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By𓆩♛𓆪 : \n{CR}\n\n**∘𒆜━━━❀🩷𝐌𝐒🤍❀━━━𒆜∘**'
-                cc1 = f'**🗃️ PDF_ID: {str(count).zfill(3)}.\n\n📒 Title: {name1} .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By𓆩♛𓆪 : \n{CR}\n\n**∘𒆜━━━❀🩷𝐌𝐒🤍❀━━━𒆜∘**'
+                cc = f'**📹 VID_ID: {str(count).zfill(3)}.\n\n📒 Title: {name1} {res}.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By𓆩♛𓆪 : \n{CR}\n\n**∘𒆜━━━❀🩷ZX🤍❀━━━𒆜∘**'
+                cc1 = f'**🗃️ PDF_ID: {str(count).zfill(3)}.\n\n📒 Title: {name1} .pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By𓆩♛𓆪 : \n{CR}\n\n**∘𒆜━━━❀🩷ZX🤍❀━━━𒆜∘**'
                     
                 
                 if "drive" in url:
@@ -645,7 +645,7 @@ async def txt_handler(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("𝙀𝙑𝙀𝙍𝙔𝙏𝙃𝙄𝙉𝙂 𝙄𝙎 𝘿𝙊𝙉𝙀  𝘿𝙊𝙉𝙀 \n\n**NOW TIME FOR REACTIONS✅** \n\n**Reaction nahi de rhe ho Sharam karo thodi Paap lagega Paap😂**")
+    await m.reply_text("𝙀𝙑𝙀𝙍𝙔𝙏𝙃𝙄𝙉𝙂 𝙄𝙎 𝘿𝙊𝙉𝙀  𝘿𝙊𝙉𝙀 ✅**")
 
 
 
